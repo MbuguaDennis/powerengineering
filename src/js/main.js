@@ -8,27 +8,6 @@ menuIcon.addEventListener('click', () => {
 closeMenuButton.addEventListener('click', ()=>{
     navBar.classList.remove("active");
 })
-// sliding  hero images
-const images = document.querySelectorAll('.hero-image');
-let currentIndex = 0;
-
-function changeBackgroundImage() {
-    images.forEach((img, index) => {
-        img.classList.remove('active');
-        if (index === currentIndex) {
-            img.classList.add('active');
-        }
-    });
-    currentIndex = (currentIndex + 1) % images.length;
-}
-
-setInterval(changeBackgroundImage, 10000); // Change image every 10 seconds
-
-// Initialize the first background image
-changeBackgroundImage();
-const options = {
-    threshold: 0.2 // Adjust threshold as needed
-};
 
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -96,16 +75,6 @@ function callSteve() {
     window.location.href = 'tel:+254758225198'; // Replace with Steve's actual phone number
 }
 
-
-// /// JavaScript
-// document.querySelectorAll('.product').forEach(item => {
-//     item.addEventListener('mouseenter', () => {
-//         item.classList.add('product-hovered'); // Add class on mouse enter
-//     });
-//     item.addEventListener('mouseleave', () => {
-//         item.classList.remove('product-hovered'); // Remove class on mouse leave
-//     });
-// });
 
 
 

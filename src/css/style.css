@@ -1,8 +1,6 @@
 @import url('reset.css');
 @import url('utilities.css');
 @import url('breakpoint.css');
-
-
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* Base styles for header */
@@ -14,14 +12,16 @@
 /* ======TOP HEADER STYLES */
 .top-header{
     width: 100%;
-    min-height: 70px;
+    /* height: 30px; */
     background-color: var(--primary-color-dark-blue);
     color: white;
     font-family: var(--font-nunito-sans);
-    padding: 1.5rem;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
 }
-.top-header h3{
+.top-header h5{
    
     font-size: 1.35rem;
     margin-bottom: 10px;
@@ -32,17 +32,15 @@
     color: var(--orange);
 }
 
+
 /* header logo styles */
 .header .logo img{
     width: 100px;
 }
-
-
-
 /* header styling */
 .header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     color: #fff;
     padding: 10px 20px;
@@ -93,13 +91,8 @@ nav ul li a:hover{
     font-weight: 900;
 }
 
-
-
-
-
-
 /* BUTTON STYLES============= */
-.send-quote-btn {
+.send-quote-btn{
     background-color:green; /* Button Background Color */
     color: #fff; /* Button Text Color */
     font-size: 16px; /* Button Font Size */
@@ -131,97 +124,58 @@ nav ul li a:hover{
     font-family:var(--font-poppins);
 }
 
-/* ====class for nav showing */
 
-
-/* here secttion styles */
-/* Hero Section Styles *//* Hero Section Styles */
-.hero {
-    position: relative;
-    height: 100vh;
+/* ===hero section=== */
+.section {
+    height: 100vh; /* Full viewport height */
+    background-image: url('../assets/images/hero_image_bg.jpg'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire area */
+    background-position: center; /* Center the image */
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: #fff;
-    overflow: hidden;
+    color: #fff; /* Text color */
+    font-family: Arial, sans-serif; /* Choose your preferred font */
 }
-.hero-images {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-.hero-image {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-.hero-image.active {
-    opacity: 0.7;
-}
-
-/* Specific Background Images */
-.hero-image.image1 {
-    background-image: url('../assets/images/generator1.avif');
-}
-
-.hero-image.image2 {
-    background-image: url('../assets/images/generator2.avif');
-}
-
-.hero-image.image3 {
-    background-image: url('../assets/images/generator3.avif');
-}
-
 .hero-content {
-    position: relative;
-    z-index: 1;
-    max-width: 600px;
+    max-width: 800px; /* Limit content width */
+    padding: 33px;
 }
 
-.hero h1 {
+.hero h2 {
     font-size: 3rem;
-    margin: 0 0 20px;
-    color: #FF6F91;
+    margin-bottom: 20px;
     font-family: var(--font-poppins);
 }
 
 .hero p {
-    font-size: 1.5rem;
-    margin: 0 0 30px;
-    font-weight: bold;
-    color: white;
-    font-family: var(--font-poppins);
-
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #FDFFFC;
 }
-
-/* Button Styles */
-.send-quote-btn {
-    background-color: #ff6600; /* Button Background Color */
+.view-services-btn{
+    background-color:#3E8914; /* Button Background Color */
     color: #fff; /* Button Text Color */
-    padding: 10px 20px; /* Button Padding */
     font-size: 16px; /* Button Font Size */
-    border: none; /* Remove Button Border */
-    border-radius: 5px; /* Button Border Radius */
+    border: 1px dashed white; /* Remove Button Border */
+    border-radius: 5px ; /* Button Border Radius */
     cursor: pointer; /* Cursor Style */
-    transition: background-color 0.3s ease; /* Smooth Transition on Hover */
+    font-family: var(--font-roboto-mono);
+    font-weight: 400;
+    padding: 15px 20px;
+    display: inline-block;
+    margin-top: 30px;
+    text-align: center;
+    color: #ffffc7;
+}
+.view-services-btn:hover{
+    opacity: 0.8;
 }
 
-.send-quote-btn:hover {
-    background-color: #e55e00; /* Button Background Color on Hover */
-}
 
-.send-quote-btn:active {
-    transform: translateY(1px); /* Button Press Effect */
-}
+
+
 /* Power Requirements Section Styles */
 .power-requirements {
     background-color: #0E5CAD; /* Use the blue color palette of Stevone Power Engineering */
@@ -238,7 +192,7 @@ nav ul li a:hover{
 }
 
 .power-requirements h2 {
-    font-size: 2.5em; /* Heading font size */
+    font-size: 1.5em; /* Heading font size */
     margin-bottom: 1em; /* Bottom margin */
 }
 
@@ -278,22 +232,6 @@ nav ul li a:hover{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* about us section */
-/* About Us Section Styles */
 /* About Us Section Styles */
 .about-us {
     background-color: #f4f4f4;
@@ -318,6 +256,12 @@ nav ul li a:hover{
     font-size: 1.8em; /* Responsive font-size */
     margin-top: 2vh; /* Responsive margin */
     margin-bottom: 1em; /* Responsive margin */
+}
+.commitment-h3{
+    color: #f5853f;
+}
+.our-partnership-h3{
+    color: #7c3626;
 }
 
 .about-us p {
@@ -372,8 +316,6 @@ nav ul li a:hover{
     }
 }
 
-
-/* ===============why us card */
 /* Why Us Section Styles */
 
 /* Why Us Section Styles */
@@ -472,9 +414,6 @@ nav ul li a:hover{
     }
 }
 
-
-/* services section */
-/* Services Section Styles */
 /* Services Section Styles */
 .services {
     background-color: #f9f9f9;
@@ -735,39 +674,6 @@ Colors for statistic headings
         flex-basis: calc(100% - 2em); /* Display one item per row on smaller screens */
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Contact Us Section Styles */
 .contact-us {
@@ -1102,43 +1008,6 @@ Colors for statistic headings
 .whatsapp-btn:hover {
     background-color: #128c7e; /* Darker color on hover */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* Responsive Styles */
 @media (max-width: 768px) { 

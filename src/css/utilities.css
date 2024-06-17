@@ -17,7 +17,6 @@
   --skyblue-rgb:rgb(135, 206, 235) ;
   --skyblue-hsla:hsl(197, 71%, 73%);
 
-
   /* FRIEND PALLETTE */
   --sky-blue: #87CEEB;
 --dark-blue: #004F67;
@@ -31,9 +30,6 @@
 --baby-blue: #E5FDFF;
 --pale-yellow: #FCFCD4;
 /*  */
-
-
-
   /* Accent Colors */
   --accent-color-electric-green: #00FF00;
   --accent-color-lime-green: #32CD32;
@@ -64,8 +60,4 @@
   --font-size-md: 1rem;      /* Medium (MD) */
   --font-size-lg: 1.125rem;  /* Large (LG) */
   --font-size-xl: 1.25rem;   /* Extra Large (XL) */
-
-
-
-
 }
