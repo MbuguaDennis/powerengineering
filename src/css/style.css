@@ -1,11 +1,12 @@
 @import url('./reset.css');
 @import url('./utilities.css');
 @import url('./breakpoints.css');
+@import "./breakpoints2.css";
 /* Import Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 /* Base styles for header */
 /* utitlity code */
-.btn{
+button{
     border: 0;
 }
 
@@ -18,34 +19,65 @@
     --blue-color-hex: #2E3192;
     --blue-color-rgb:rgb(46,49,146);
 }
+.slogan{
+    text-align: center;
+    font-family: var(--font-ibm-plex-sans);
+    font-size: 0.75rem;
+}
+.menu-slogan{
+    margin-top: 2.5em;
+    color: #E65C19;
+    font-size: 1rem;
+    font-family: var(--font-roboto-mono);
+}
 
 /* ======TOP HEADER STYLES */
-.top-header{
-    width: 100%;
-    background-color: var(--primary-color-dark-blue);
-    color: white;
-    font-family: var(--font-nunito-sans);
+.top-header-details{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
+    border-bottom: 3px solid forestgreen;
+    padding: 1em 10%;
+} 
+#stevone-logo{
+    width: 284px;
+    height: 51px;
+    object-fit: cover;
+    cursor: pointer;
 }
-.top-header h5{
-   
-    font-size: 1.35rem;
-    margin-bottom: 10px;
-    position: relative;
+/* heading */
+.service-title,.phone-contact{
+    font-family: var(--font-nunito-sans);
 }
-.top-header span i{
-    margin-right: 10px;
-    color: var(--orange);
+.phone-contact{
+    font-weight: bold;
+    color: rgb(7, 100, 7);
+    letter-spacing: 1.2;
+}
+/* contact us button */
+.contact-us-btn{
+    background-color: #358600;
+    padding: 1.1em 2.2em;
+    display: inline-block;
+    border-radius: 30px;
+    margin-left: 0.95em;
+    cursor: pointer;
+    box-shadow: 2px 2px 3px var(--accent-color-electric-green);
+    color: white;
+    font-family: var(--font-poppins);
+    font-size: 1.1rem;
+    display: none;
+    transition: 0.5s all ease-in-out;
+
+}
+.contact-us-btn:hover{
+    background-color: white;
+    color: green;
 }
 
 
-/* header logo styles */
-.header .logo img{
-    width: 100px;
-}
+
+
 /* header styling */
 .header {
     display: flex;
@@ -64,12 +96,21 @@ nav ul {
     justify-content: center;
    
 }
+.logo2{
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    border-radius: 51%; 
+    cursor: pointer;
+    display: none;
+}
 nav ul li {
     margin: 0 15px;
 }
 nav ul li a {
     color:#faf5f6;
     text-transform: capitalize;
+    font-size: 1.125rem;
     font-family: var(--font-poppins);
 }
 
@@ -89,13 +130,14 @@ nav ul li a:hover{
     cursor: pointer;
     position: absolute;
     background-color: coral;
-    padding: 10px;
-    border-radius: 12px;
-    right: 1rem;
-    top: 1rem;
+    border-radius: 0.35em;
+    padding: 8px;
+    right: 0.5em;
+    top: 0.5em;
+    text-align: center;
 }
 .menu-icon i{
-    font-size: 30px;
+    font-size: 17px;
     color: black;
     font-weight: 900;
 }
@@ -118,26 +160,25 @@ nav ul li a:hover{
 }
 .closemenu span{
     text-transform: uppercase;
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 0 5px;
     background-color: #1E1926;
     color: #E39DFF;
     padding: 5px 10px;
     border-radius: 12px;
-    font-weight: 900;
+    font-weight: 300;
     display: block;
     position: absolute;
     text-align: right;
     top: 0.85em;
     right: 0.85em;
-    font-family:var(--font-poppins);
+    font-family:var(--font-roboto-mono);
 }
 
 
 /* ===hero section=== */
 .section {
-    height: 100vh; /* Full viewport height */
-    background-image: url('../assets/images/hero_image_bg.jpg'); /* Replace with your image path */
+    background-image: url('../assets/images/hero_image.png'); /* Replace with your image path */
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the image */
     display: flex;
@@ -146,6 +187,7 @@ nav ul li a:hover{
     text-align: center;
     color: #fff; /* Text color */
     font-family: Arial, sans-serif; /* Choose your preferred font */
+    padding: 20px;
 }
 .hero-content {
     max-width: 800px; /* Limit content width */
@@ -153,7 +195,7 @@ nav ul li a:hover{
 }
 
 .hero h2 {
-    font-size: 3rem;
+    font-size: 1.75rem;
     margin-bottom: 20px;
     font-family: var(--font-poppins);
 }
@@ -161,7 +203,9 @@ nav ul li a:hover{
 .hero p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color: #FDFFFC;
+    color:black;
+    letter-spacing: 1.2;
+    font-family: sans-serif;
 }
 .view-services-btn{
     background-color:#3E8914; /* Button Background Color */
@@ -1023,6 +1067,10 @@ Colors for statistic headings
   }
   /* Responsive Styles */
   @media (max-width: 768px) { 
+
+    .logo2{
+        display: block;
+    }
     .header__nav{
         width: 100%;
         height: 100vh;
@@ -1030,10 +1078,8 @@ Colors for statistic headings
         position:absolute;
         top: 0;
         left: -100%;
-        padding-top: 6em;
         z-index: 999;
-      
-  
+    
     }
     .header__nav ul{
         display: flex;
@@ -1042,26 +1088,12 @@ Colors for statistic headings
         align-items: center;
         width: 100%;
     }
-    /* TOP HEADER STYLING FOR SMALL DEVICES */
-    .top-header{
-        text-align: center;
-  
-    }
-    .top-header span{
-        display: block;
-        font-size: 20px;
-    }
-    .top-header h3{
-        font-weight: 900;
-        font-size: 2rem;
-    }
     .header__nav ul li{
-        margin-top: 20px;
-        text-align: center;
+        margin-top: 10px;
     }
-    .header__nav ul li a{
-        font-size: 2.1rem
-    }
+        .header__nav ul li a{
+            font-size: 1.125rem;
+        }
     
     .btn{
         display: none;
@@ -1092,6 +1124,24 @@ Colors for statistic headings
         display: none;
     }
   }
+
+  /* medium screens top header styles */
+
+  @media screen and (min-width:769px) {
+    .right-details-items{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact-us-btn{
+        display: inline-block;
+    }
+    .menu-slogan{
+        display: none;
+    }
+
+    
+}
 
 
 

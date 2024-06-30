@@ -13,19 +13,24 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <!-- FIXED TOP HEADER -->
-    <div class="top-header">
-    <div class="right__top-header">
-        <span><i class="fas fa-envelope"></i> stevonepower@gmail.com</span>
-        <span><i class="fa-solid fa-phone"></i> +254 0112 733 574 </span>
-        <span><i class="fa-solid fa-phone"></i> +254 758 225 198</span>
+<!-- website top header -->
+ <article class="top-header-details">
+    <div class="image-container">
+        <a href="./Home.html">
+            <img src="../assets/logos/Stevone_logo_pngformat_transparent-min.png" alt="stevone power engineering logo" id="stevone-logo">
+        </a>
     </div>
-    <div class="left__top-header">
-        <h5>
-            24/7 Generator Service.
-        </h5>
-      </div>
-</div>
+    <div class="right-details-items">
+        <span class="service-title">24/7 Generator Service.</span>
+        <span class="phone-contact"><strong>+254 (0)112 733 574 </strong></span>
+        <span class="phone-contact"s><strong>+254 (0)758 225 198s</strong></span>
+        <button class="contact-us-btn" role="button">
+            contact us
+        </button>
+    </div>
+
+ </article>
+
     <!-- end of website top header -->
 
     <!-- website header -->
@@ -35,8 +40,11 @@
         </div>
         <nav class="header__nav" id="header-nav">
             <div class="closemenu">
-                <span id="close-menu-btn">close menu</span>
+                <span id="close-menu-btn">back home</span>
             </div>
+            <a href="./Home.html">
+                <img src="../assets/logos/Stevone-complete-logo.svg" alt="our company logo" id="stevone-logo" class="logo2">
+            </a>
             <ul id="nav-list" role="list">
                 <li><a href="../pages/Home.html" class="nav_links">Home</a></li>
                 <li><a href="../pages/Aboutus.html" class="nav_links">About Us</a></li>
@@ -44,18 +52,30 @@
                 <li><a href="./Ourprojects.html" class="nav_links">Our Projects</a></li>
                 <li><a href="../pages/Contact-us.html" class="nav_links">Contact</a></li>
             </ul>
+            <h3 class="slogan menu-slogan">Reliable Power, Every Hour <br>
+                Trusted Generator and panel Services</h3>
         </nav>
     </header>
     <!-- =============end of header section -->
+
+
+
+
+
+
+
+
+
      <!-- ==== HERO SECTION START -->
       <section class="section hero" id="hero-section">
         <div class="hero-content">
-        <h2>STEVONE POWER ENGINEERING</h2>
-        <p>Your one-stop solution for electrical control panels <br> solar panels, pumps, motors, and generators.</p>
+        <h2>Stevone Power Engineering is Your one-stop solution for electrical control panels <br> solar panels, pumps, motors, and generators. </h2>
+        <p>
+            Leveraging our technical know-how, we collaborate with customers to address their challenges by providing top-notch monitoring, maintenance, repair, and life extension services for motors, generators, pumps, and all types of electrical rotating equipment
+        </p>
         <a href="#services-section">
             <button class="view-services-btn">
                 View our services
-    
             </button>
         </a>
         
@@ -470,36 +490,6 @@
 </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <!-- Footer Section -->
 <footer class="footer">
     <div class="container">
@@ -593,6 +583,6 @@
    
 
     <!-- load javascript in page -->
-    <script src="./src/js/main.js"></script>
+    <script src="../js/main.js"></script>
 </body>
 </html>

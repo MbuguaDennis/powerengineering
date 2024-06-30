@@ -1,0 +1,10 @@
+/* top header breakpoints */
+
+@media screen and (min-width:768px) {
+    .right-details-items{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
