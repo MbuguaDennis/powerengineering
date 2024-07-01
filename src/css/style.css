@@ -8,6 +8,7 @@
 /* utitlity code */
 button{
     border: 0;
+    cursor: pointer;
 }
 
 /* CSS COLORS IMPORTANT */
@@ -225,6 +226,37 @@ nav ul li a:hover{
 .view-services-btn:hover{
     opacity: 0.8;
 }
+/* ------------hero section end----------- */
+
+/* ----find more about us--- */
+.find-more-about{
+    width: 100%;
+    background-color: #00adc6;
+    color: white;
+    display:flex;
+    align-items: center;
+    padding: 1.25em 2.5em;
+    justify-content: space-between;
+    text-align: center;
+    height: 70px;
+
+}
+.find-more-about h3{
+    font-family: var(--font-poppins);
+}
+.more-about-us-btn{
+    background-color: blue;
+    padding: 20px 40px;
+    height: 70px;
+    width: 100%;
+    display: block;
+}
+
+
+
+
+
+
 
 
 /* Power Requirements Section Styles */
@@ -232,6 +264,7 @@ nav ul li a:hover{
     background-color: #0E5CAD; /* Use the blue color palette of Stevone Power Engineering */
     color: #fff; /* Text color */
     padding: 5vh 0; /* Top and bottom padding */
+    font-family: var(--font-nunito-sans);
 }
 
 .power-requirements .container {
@@ -243,12 +276,16 @@ nav ul li a:hover{
 }
 
 .power-requirements h2 {
-    font-size: 1.5em; /* Heading font size */
+    font-size: 1.33rem; /* Heading font size */
     margin-bottom: 1em; /* Bottom margin */
+    color: #f5f6f7;
+    text-decoration: underline;
+    padding: 0 5px;
+    letter-spacing: 1.5px;
 }
 
 .power-requirements p {
-    font-size: 1.2em; /* Paragraph font size */
+    font-size: 1em; /* Paragraph font size */
     margin-bottom: 1.5em; /* Bottom margin */
 }
 
@@ -260,6 +297,13 @@ nav ul li a:hover{
     max-width: 100%; /* Ensure image does not exceed container width */
     height: auto; /* Maintain aspect ratio */
 }
+.view-products-link{
+    color: greenyellow;
+    text-decoration: underline;
+    font-size: 1.05rem;
+}
+
+
 /* Button Styles */
 .talk-btn {
     display: inline-block;
@@ -270,10 +314,13 @@ nav ul li a:hover{
     font-size: 1.2em; /* Button text size */
     border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+    font-weight: 700;
+    font-family: var(--font-nunito-sans);
+    border-radius: 30px 25px 20px 15px;
 }
 
-.btn:hover {
-    background-color: var(--pale-yellow); /* Darker color on hover */
+.talk-btn:hover {
+    background-color: var(--dark-blue); /* Darker color on hover */
 }
 
 
@@ -631,39 +678,6 @@ nav ul li a:hover{
     font-size: 1.1em; /* Responsive font-size */
     margin-bottom: 0; /* Responsive margin */
 }
-
-/* Statistics Section Styles */
-.statistics {
-    background-color: #f9f9f9;
-    padding: 3vh 0;
-    text-align: center;
-}
-
-.statistics .container {
-    max-width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.statistic-item {
-    flex: 1 1 250px; /* Flex basis for each statistic item */
-    margin: 1em;
-}
-
-Colors for statistic headings
-.statistic-item:nth-child(1) h3 { color: #FF5733; } /* First statistic item */
-.statistic-item:nth-child(2) h3 { color: #FFC300; } /* Second statistic item */
-.statistic-item:nth-child(3) h3 { color: #C70039; } /* Third statistic item */
-.statistic-item:nth-child(4) h3 { color: #900C3F; } /* Fourth statistic item */
-.statistic-item:nth-child(5) h3 { color: #581845; } /* Fifth statistic item */
-
-.statistic-item p {
-    font-size: 1.2em;
-    color: #666;
-}
-
 /* Media queries for responsiveness */
 
 /* Contact Us Section Styles */
@@ -858,41 +872,6 @@ Colors for statistic headings
 .faq-item .answer.show-answer {
     display: block; /* Show answer when toggled */
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Footer Section Styles */
 .footer {
     background-color: #333; /* Dark background */
@@ -990,17 +969,6 @@ Colors for statistic headings
 .whatsapp-btn:hover {
     background-color: #128c7e; /* Darker color on hover */
 }
-
-
-
-
-
-
-
-
-
-
-
 /* ----------------ALL WEBSITE BREAK POINTS ARE HERE */
 /* Media query for larger screens */
 @media (min-width: 768px) {
