@@ -236,7 +236,11 @@ nav ul li a:hover{
 }
 #changing-text {
     display: inline-block;
+    color: skyblue;
     transition: opacity 0.5s ease-in-out;
+    font-family: var(--font-open-sans);
+    font-weight: bold;
+    font-size: 24px;
 }
 
 
@@ -252,14 +256,15 @@ nav ul li a:hover{
     color: white;
     display:flex;
     align-items: center;
-    padding: 1.25em 2.5em;
+    margin-top: -30px;
     justify-content: space-between;
     text-align: center;
-    height: 70px;
+    padding: 2vw;
 
 }
 .find-more-about h3{
     font-family: var(--font-poppins);
+    font-size: 18px;
 }
 .more-about-us-btn{
     background-color: blue;
@@ -348,74 +353,101 @@ nav ul li a:hover{
 
 
 /* About Us Section Styles */
-.about-us {
-    background-color: #f4f4f4;
-    padding: 3vh 0; /* Responsive padding */
+.about__us {
+    background: linear-gradient(135deg, #00308F,#002D62);
     text-align: left;
     font-family: var(--font-nunito-sans);
+    padding: 10vh 0;
 
 }
-.about-us .container {
-    max-width: 90%; /* Responsive max-width */
+.about__us > .about__us__container{
+    max-width: 50vw;
     margin: 0 auto;
+    text-align: center;
 }
-.about-us h2 {
-    font-size: 2.5em; /* Responsive font-size */
+.about__us h2 {
+    font-size: 1.5rem;
     margin-bottom: 1.5em; /* Responsive margin */
-    background-color: var(--dark-blue);
-    color: orange;
+    color: #FF7F3E;
+    word-wrap: nowrap;
     text-align: center;
 }
 
-.about-us h3 {
+.about__us h3 {
     font-size: 1.8em; /* Responsive font-size */
     margin-top: 2vh; /* Responsive margin */
     margin-bottom: 1em; /* Responsive margin */
+    color: #FF7F3E;
+    position: relative;
 }
-.commitment-h3{
-    color: #f5853f;
-}
-.our-partnership-h3{
-    color: #7c3626;
+.about__us h3::after{
+    position: absolute;
+    content: '';
+    width: 50vw;
+    height: 3px;
+    background-color: white;
+    bottom: -10px;
+    right: 0;
+
+
 }
 
-.about-us p {
+.about__us p {
     font-size: 1.1em; /* Responsive font-size */
     line-height: 1.6;
     margin-bottom: 1.5em; /* Responsive margin */
+    max-width: 600px;
+    margin: auto;
+    color: #FFF6E9;
+ 
 }
-.about-us .brands-list {
+.about__us .brands-list {
     list-style-type: none;
-    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
-.about-us .brands-list li {
-    font-size: 1.1em; /* Responsive font-size */
-    margin-bottom: 1em; /* Responsive margin */
+.brands-list span {
+    font-size: 1.1em;
+    display: inline-block;
+    margin: 10px;
+    color: #EE4E4E;
+    background-color: white;
+    padding: 15px;
+    border-radius: 18px;
+    border-left: 5px solid rgb(214, 34, 58);
+    cursor: pointer;
+
+}
+.brands-list span:hover{
+    opacity: 0.7;
+    
 }
 
 /* keyframes */
-.about-us h2,
-.about-us h3,
-.about-us p,
-.about-us .brands-list li {
+.about__us h2,
+.about__us h3,
+.about__us p,
+.about__us .brands-list li {
     opacity: 0; /* Initially hide the elements */
     animation: slideInLeft 0.5s forwards; /* Apply animation */
 }
 
-.about-us h2 {
+.about__us h2 {
     animation-delay: 0s; /* Delay for h2 */
 }
 
-.about-us h3 {
+.about__us h3 {
     animation-delay: 1s; /* Delay for h3 */
 }
 
-.about-us p {
+.about__us p {
     animation-delay: 1.5s; /* Delay for p */
 }
 
-.about-us .brands-list li {
+.about__us .brands-list li {
     animation-delay: 2s; /* Delay for li */
 }
 
@@ -436,7 +468,7 @@ nav ul li a:hover{
 /* Why Us Section Styles */
 .why-us {
     background-color: #fff;
-    padding: 3vh 0; /* Responsive padding */
+    padding: 1vh 0; /* Responsive padding */
     text-align: center;
 }
 
@@ -445,9 +477,12 @@ nav ul li a:hover{
     margin: 0 auto;
 }
 
-.why-us h2 {
+.why-us .container h2 {
     font-size: 2.5em; /* Responsive font-size */
-    margin-bottom: 1.5em; /* Responsive margin */
+     margin-bottom: 1.75em;
+    font-weight: 900;
+    font-family: var(--font-poppins);
+    text-align: center;
 }
 
 .why-us-cards {
@@ -464,6 +499,7 @@ nav ul li a:hover{
     margin-bottom: 2em; /* Responsive margin */
     width: 100%; /* Full width in column layout */
     max-width: 300px; /* Max width to prevent too wide cards */
+    box-shadow: 2px 1px 8px 5px black;
 }
 
 .why-us-card i {
@@ -478,11 +514,39 @@ nav ul li a:hover{
     font-weight: 900;
 }
 
+.left-first{
+    animation: slideleft 0.5s ease-in-out 0.5s;
+}
+.right-first{
+    animation: slideright 0.s ease-out 1.5s ;
+}
+.left-second{
+    animation: slideleft 0.5s ease-in-out 2.5s;
+}
+.right-second{
+    animation: slideright 0.5s ease-out 3.5s ;
 
-
-
-
-
+}
+/* why us animation */
+@keyframes slideleft {
+    0%{
+        transform: translateX(-200px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+    
+}
+@keyframes slideright
+ {
+    0%{
+        margin-right: -1500px;
+    }
+    100%{
+        margin-right: 0;
+    }
+    
+}
 .why-us-one{
     color: var(--orange);
 }
@@ -549,7 +613,7 @@ nav ul li a:hover{
 }
 
 /* Contact Button Styles */
-.contact-button {
+.learn__morebtn {
     display: inline-block;
     margin-top: 1.5em; /* Responsive margin */
     padding: 0.75em 1.5em; /* Padding for the button */
@@ -558,6 +622,7 @@ nav ul li a:hover{
     text-decoration: none; /* Remove underline */
     border-radius: 0.3em; /* Rounded corners */
     transition: background-color 0.3s ease; /* Smooth background color transition */
+    font-weight: 700;
 }
 
 .contact-button:hover {
@@ -581,13 +646,6 @@ nav ul li a:hover{
     margin-bottom: 1.5em; /* Responsive margin */
 }
 
-.brands-list {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-bottom: 2em; /* Responsive margin */
-}
-
 .brand {
     padding: 1em 2em; /* Padding inside the brand box */
     margin: 0.5em; /* Spacing between brands */
@@ -595,21 +653,76 @@ nav ul li a:hover{
     border-radius: 0.5em; /* Rounded corners */
 }
 
-.coverage-list h3 {
-    font-size: 1.5em; /* Responsive font-size */
-    margin-top: 1.5em; /* Responsive margin */
-}
-
 .counties-list {
     list-style-type: none;
     padding: 0;
+    width: 100%;
+    background-color: #020202;
+    color: var(--orange);
+    padding: 10%;
+    font-family: var(--font-roboto-mono);
+}
+.counties-list h4{
+    margin-bottom: 10px;
+    color: #f5f6f7;
 }
 
 .counties-list li {
     font-size: 1.1em; /* Responsive font-size */
     margin-bottom: 0.5em; /* Responsive margin */
+    display: inline-block;
+    color: #ff9f1c;
+    margin: 0 10px;
 }
+.outside__kenya{
+    margin-top: 1.5em;
+    font-family: var(--font-nunito-sans);
 
+}
+.outside__kenya h3{
+    font-size: 22px;
+
+}
+.outside__kenya p{
+    padding: 20px;
+}
+.outside__kenya span{
+    color: #1619e2;
+    font-size: 22px;
+}
+hr{
+    width: 100px;
+    height: 7px;
+    background-color: rgb(238, 77, 14);
+    border-radius: 20px;
+    margin: auto;
+}
+.reach__out{
+    background-color: #ef233c;
+    padding: 2.5em;
+    color: #edf2f4;
+    font-family: var(--font-roboto-mono);
+    
+}
+.reach__out h3{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: oblique;
+    margin-bottom: 0.9em;
+}
+.contact__button{
+    display: inline-block;
+    margin-top: 0.93em;
+    color: #2b2d42;
+    background-color: white;
+    padding: 0.9em 1.8em;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.5s all ease-out;
+}
+.contact__button:hover{
+    opacity: 0.6;
+}
 
 
 /* /* Projects Section Styles */
@@ -1108,11 +1221,8 @@ nav ul li a:hover{
     .hide{
         display: none;
     }
-  }
+    /* medium screens top header styles */
 
-  /* medium screens top header styles */
-
-  @media screen and (min-width:769px) {
     .right-details-items{
         flex-direction: row;
         justify-content: space-between;
@@ -1124,9 +1234,13 @@ nav ul li a:hover{
     .menu-slogan{
         display: none;
     }
-
+    /* about us h3 after */
+    .about__us h3::after{
+      display: none;
     
-}
+    
+    }
+  }
 
 
 
