@@ -178,11 +178,12 @@ nav ul li a:hover{
 
 
 /* ===hero section=== */
-.section {
-    background-image: url('../assets/images/hero_image.png'); /* Replace with your image path */
+.hero__section{
+    background-image: url('../assets/images/black_hero_background.jpg'); /* Replace with your image path */
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the image */
     display: flex;
+    background-repeat: no-repeat;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -190,21 +191,28 @@ nav ul li a:hover{
     font-family: Arial, sans-serif; /* Choose your preferred font */
     padding: 20px;
 }
-.hero-content {
+.hero__section > .hero__content {
     max-width: 800px; /* Limit content width */
     padding: 33px;
 }
+.hero__content__title{
+    font-size:1.25rem ;
+    white-space: nowrap;
+    color: var(--orange-color-hex);
+    font-family: var(--font-poppins);
 
-.hero h2 {
-    font-size: 1.75rem;
+}
+
+.hero__section> .hero__content h2 {
+    font-size: 1rem;
     margin-bottom: 20px;
     font-family: var(--font-poppins);
 }
 
-.hero p {
+.hero__section> .hero__content p {
     font-size: 1.2rem;
     line-height: 1.6;
-    color:black;
+    color:coral;
     letter-spacing: 1.2;
     font-family: sans-serif;
 }
@@ -226,6 +234,15 @@ nav ul li a:hover{
 .view-services-btn:hover{
     opacity: 0.8;
 }
+#changing-text {
+    display: inline-block;
+    transition: opacity 0.5s ease-in-out;
+}
+
+
+
+
+
 /* ------------hero section end----------- */
 
 /* ----find more about us--- */
