@@ -42,134 +42,134 @@
             </div>
             <ul id="nav-list" role="list">
                 <li><a href="./Home.html" class="nav_links">Home</a></li>
-                <li><a href=".Aboutus.html" class="nav_links">About Us</a></li>
+                <li><a href="./Aboutus.html" class="nav_links">About Us</a></li>
                 <li><a href="./Services.html" class="nav_links">Services</a></li>
                 <li><a href="./Ourprojects.html" class="nav_links">Our Projects</a></li>
             </ul>
         </nav>
     </header>
     <!-- =============end of header section -->
-
-    <section class="availability-section">
-        <h2>Our Availability Matters</h2>
-        <div class="availability-circle">
-            <div class="text">Available</div>
-        </div>
-        <p>At Stevone Power Engineering, we prioritize your needs and respond promptly to your inquiries. <br>
-            Whether it's a question, concern, or request for assistance, we are just a call away.</p>
-        <p>Our team is committed to providing quick and efficient responses to ensure your satisfaction and peace of mind. Contact us today and experience our dedication firsthand!</p>
+     <!-- form section -->
+     <header>
+        <h1>Contact Us</h1>
+        <p>Hi, we are always open for cooperation and suggestions, contact us in one of the ways below.</p>
+    </header>
+    <section class="contact-info">
+        <h2><i class="fas fa-map-marker-alt"></i> Our Location</h2>
+        <p>P.O BOX, 75984-00200</p>
+        <h2><i class="fas fa-phone"></i> Phone Number</h2>
+        <p>(0) 112 733 574<br>(0)758 225 198</p>
+        <h2><i class="fas fa-envelope"></i> Email Address</h2>
+        <p>stevonepower@gmail.com</p>
+        <h2><i class="fas fa-clock"></i> Working Hours</h2>
+        <p>Mon-Fri: 8 A.M. – 4.30 P.M.<br>Sat-Sun: Closed</p>
     </section>
-    <!-- CONTACT US SECTION -->
-    <section class="contact-section">
-        <h2>Contact Us</h2>
-            <h1>Stevone Power Engineering</h1>
-        <div class="contact-info">
-            
-            <div class="contact-detail">
-                <h3><i class="fas fa-map-marker-alt"></i> Address</h3>
-                <p>P.O BOX 75984-00200</p>
-            </div>
-            <div class="contact-detail email">
-                <h3><i class="far fa-envelope"></i> E-mail</h3>
-                <p><a href="mailto:stevonepower@gmail.com">stevonepower@gmail.com</a></p>
-            </div>
-            
-            <div class="contact-detail">
-                <h3><i class="fas fa-phone"></i> Phone</h3>
-                <p>Sales: 0112733574</p>
-            </div>
-            <div class="contact-detail">
-                <h3><i class="far fa-clock"></i> Hours</h3>
-                <p>Sunday-Friday: 8am to 6pm</p>
-                <p>Sunday: Closed</p>
-            </div>
-        </div>
-        <!-- Add map here if needed -->
-    </section>
-
-    <section class="enquiry-form">
-        <h2>Send Us an Enquiry</h2>
+    <section class="contact-form">
+        <h2>Leave us a Message</h2>
+        <p>Don’t want to call or come to our office? Then use the contact form below, we will answer as quickly as possible.</p>
         <form action="#" method="post">
-            <div class="form-group">
-                <label for="enq-name">Name<span>*</span></label>
-                <input type="text" id="enq-name" name="enq-name" class="enq-input" required>
-            </div>
-            <div class="form-group">
-                <label for="enq-email">Email<span>*</span></label>
-                <input type="email" id="enq-email" name="enq-email" class="enq-input" required>
-            </div>
-            <div class="form-group">
-                <label for="enq-telephone">Telephone Number<span>*</span></label>
-                <input type="tel" id="enq-telephone" name="enq-telephone" class="enq-input" required>
-            </div>
-            <div class="form-group">
-                <label for="enq-subject">Subject</label>
-                <input type="text" id="enq-subject" name="enq-subject" class="enq-input">
-            </div>
-            <div class="form-group">
-                <label for="enq-message">Message</label>
-                <textarea id="enq-message" name="enq-message" class="enq-input"></textarea>
-            </div>
-            <div class="form-group">
-                <input type="checkbox" id="enq-not-a-robot" name="enq-not-a-robot" class="enq-checkbox" required>
-                <label for="enq-not-a-robot">I am not a robot</label>
-            </div>
-            <button type="submit" class="enq-submit">Submit</button>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="service">Select Service</label>
+            <select id="service" name="service" required>
+                <option value="sale">Sale</option>
+                <option value="repair">Repair</option>
+                <option value="service">Service</option>
+                <option value="maintenance">Maintenance</option>
+            </select>
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+            <button type="submit">Submit</button>
         </form>
     </section>
 
+    
+
         <!-- Add map here if needed -->
         <!-- Map Section -->
-<section class="map-section">
-    <div class="map-container">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127641.17044270584!2d36.76499575876998!3d-1.3030359782409504!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi!5e0!3m2!1sen!2ske!4v1716297420510!5m2!1sen!2ske" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    </div>
-</section>
-    </section>
-    
-<!-- Footer Section -->
-<footer class="footer">
-    <div class="container">
-        <div class="footer-content">
-            <!-- Company Info -->
-            <div class="footer-info">
-                <h3>Stevone Power Engineering</h3>
-                <p>For all of your power requirements, Stevone Power Engineering is here to help. Generators ranging in power from 10 to 500 kW are readily available for prompt delivery from our vast inventory.</p>
+        <section class="map">
+            <h2>Our Location</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.564567037422!2d36.80649451584917!3d-1.2920657457249674!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10d84f2e174d%3A0x5c93791244d4ac6c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2sus!4v1594309512061!5m2!1sen!2sus" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                aria-hidden="false" 
+                tabindex="0">
+            </iframe>
+        </section>
+
+        <!-- Footer Section -->
+        <footer>
+            <a href="./Home.html">
+                <img src="../assets/logos/Stevone-complete-logo.svg" alt="" class="footer__logo">
+            </a>
+            <div class="contact">
+                <p>Call Us Today: +254 (0)758 225 198</p>
             </div>
-            <!-- Quick Links -->
-            <div class="footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-            <!-- Contact Info -->
-            <div class="footer-contact">
-                <h3>Contact Us</h3>
-                <p>Phone: 082 403 3450</p>
-                <p>Email: info@stevonepower.com</p>
-                <p>Address: Nairobi, Kenya</p>
-                <!-- WhatsApp Button -->
-    <a href="https://wa.me/2540112733574?text=Hello%20Stevone%20Power%20Engineering,%20I%20have%20a%20question" target="_blank" class="whatsapp-btn">Contact us on WhatsApp</a>
-                <div class="social-icons">
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
+            <div class="links">
+                <div class="column">
+                    <h3>Generators</h3>
+                    <ul>
+                        <li>Tier 4 Final Generators</li>
+                        <li>Diesel Generators</li>
+                        <li>EPA Generators</li>
+                        <li>Export Generators</li>
+                        <li>Mobile Generators</li>
+                        <li>Natural Gas Generators</li>
+                        <li>UL2200 generators</li>
+                        <li>0 to 100 kW generators</li>
+                        <li>101 to 300 kW generators</li>
+                        <li>301 to 500 kW generators</li>
+                        <li>501 to 1000 kW generators</li>
+                        <li>1001 kW and up generators</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>Accessories</h3>
+                    <ul>
+                        <li>solar panels</li>
+                        <li>Pumps</li>
+                        <li>Motors</li>
+                        <li>electrical controls</li>
+                        
+                    </ul>
+                    <h3>Parts</h3>
+                    <ul>
+                        <li>Alternators</li>
+                        <li>Electrical Parts</li>
+                        <li>Voltage Regulators</li>
+                        <li>Generator Controllers</li>
+                    </ul>
+                </div>
+                <div class="column">
+                    <h3>FAQs</h3>
+                    <ul>
+                        <li>Return Policy</li>
+                        <li>Glossary</li>
+                    </ul>
+                    <h3>Social Media</h3>
+                    <ul>
+                        <li>Linkedin</li>
+                        <li>Instagram</li>
+                        <li>Facebook</li>
+                        <li>Whatsapp</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Stevone Power Engineering. All rights reserved.</p>
-        </div>
-    </div>
-    <button id="go-to-top" class="go-to-top">↑ Go to Top</button>
-</footer>
-
+            <div class="footer-bottom">
+                <p>©2024 Stevone Power Engineering Company</p>
+                <p><a href="#">Privacy Policy</a> | <a href="#">Site Map</a> | <a href="#">Terms and Conditions</a></p>
+            </div>
+            <button id="go-to-top" class="go-to-top">↑ Go to Top</button>
+        </footer>
 <script src="../js/main.js"></script>
 </body>
 </html>

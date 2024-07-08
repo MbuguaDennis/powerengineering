@@ -1,154 +1,170 @@
-@import url('breakpoint.css');
-
-.contact-section {
-    padding: 5rem 0;
-    text-align: center;
-}
-
-.contact-info {
-    max-width: 800px;
-    margin: 0 auto;
-}
-
-.contact-detail {
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 2rem;
 }
 
-.contact-detail h3 {
-    margin-top: 1rem; /* Adjust top margin */
-    font-size: 1.5rem;
-    color: #333; /* Text color */
+header {
+    text-align: center;
+    margin: 2em 0;
 }
 
-.contact-detail p {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    color: #666; /* Text color */
+header h1 {
+    margin-bottom: 0.5em;
 }
 
-.contact-detail i {
-    color: orange; /* Icon color */
-    font-size: 3rem; /* Increase icon size */
-    background-color: #f8f8f8; /* Background color */
-    border-radius: 50%; /* Border radius to make it circle */
-    padding: 1.5rem; /* Increase padding for space around the icon */
+.contact-info, .contact-form {
+    width: 90%;
+    max-width: 40em;
+    margin: 1em 0;
+    padding: 1em;
+    background-color: #f0f0f0;
+    border-radius: 0.5em;
 }
 
-/* Flex layout for large screens */
-@media (min-width: 768px) {
-    .contact-detail {
-        flex-direction: row;
+.contact-info h2, .contact-form h2 {
+    margin-top: 0;
+}
+
+.contact-info p, .contact-form p {
+    margin: 0.5em 0;
+}
+.contact-info h2 i, .contact-form h2 i, .map h2 i {
+    margin-right: 0.5em;
+    color: orange;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label {
+    margin: 0.5em 0 0.2em;
+}
+
+.contact-form input, .contact-form select, .contact-form textarea, .contact-form button {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    border: 1px solid #ccc;
+    border-radius: 0.3em;
+}
+
+.contact-form button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 0.7em;
+    border-radius: 0.3em;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .contact-info, .contact-form {
+        width: 95%;
+    }
+}
+.map {
+    width: 100%;
+    max-width: 40em;
+    margin: 2em 0;
+    padding: 1em;
+    background-color: #f0f0f0;
+    border-radius: 0.5em;
+    text-align: center;
+}
+
+.map iframe {
+    width: 100%;
+    height: 20em;
+    border: 0;
+    border-radius: 0.5em;
+}
+
+@media (max-width: 768px) {
+    .map iframe {
+        height: 15em;
+    }
+}
+
+/* ABOUT US FOOTER */
+footer {
+    background-color: #007BFF;
+    color: white;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font-ibm-plex-sans);
+    width: 100%;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1 1 20em;
+    margin: 1em;
+}
+
+.column h3 {
+    margin-top: 0;
+}
+
+.column ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.column ul li {
+    margin: 0.5em 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.footer-bottom p {
+    margin: 0.5em 0;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .links {
+        flex-direction: column;
         align-items: center;
     }
 
-    .contact-detail i {
-        margin-right: 1rem; /* Add space between icon and text */
+    .column {
+        margin: 1em 0;
     }
 }
-.enquiry-form {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #000;
-    color: #fff;
-}
-
-.enq-input,
-.enq-checkbox {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #333;
-    color: #fff;
-}
-
-.enq-checkbox {
-    width: auto;
-}
-
-.enq-submit {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #ff0000;
-    color: #fff;
-    cursor: pointer;
-}
-
-.enq-submit:hover {
-    background-color: #cc0000;
-}
-
-span {
-    color: #ff0000;
-}
-
-.form-group {
-    margin-bottom: 20px;
-}
-
-.form-group label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-
-/* Styles for the Availability section */
-.availability-section {
-    padding: 20px;
-    background-color: #f9f9f9; /* Light gray background */
-    border-radius: 10px;
-    margin-top: 40px;
-    text-align: center;
-    position: relative;
-}
-
-.availability-section h2 {
-    color: #333;
-    font-size: 24px;
-}
-
-.availability-section p {
-    color: #666;
-    font-size: 18px;
-    margin-bottom: 20px;
-}
-
-/* Styles for the availability circle */
-.availability-circle {
-    display: inline-block;
-    position: relative;
-}
-
-.availability-circle .pulse {
-    width: 18px;
-    height: 18px;
-    background-color: #e70e0e; /* Green color for availability */
-    border-radius: 50%; /* Circular shape */
-    position: absolute;
-    top: -15px;
-    right:-10px ; /* Center horizontally */
-    animation: pulse 1.5s infinite alternate; /* Pulse animation */
-}
-
-.availability-circle .text {
-    color: #333;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-
-
-
-
-
-
 
 

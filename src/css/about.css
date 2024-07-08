@@ -109,6 +109,9 @@
 
 .mission-text {
     font-family: var(--font-poppins);
+    background-color: #bf0603;
+    color:#fff0f3;
+    padding: 3%;
 }
 
 .mission h2, .mission h3 {
@@ -123,6 +126,38 @@
 .mission p {
     margin-bottom: 1rem;
 }
+.flex-container {
+    display: flex;
+    align-items: stretch; /* Ensures all children have the same height */
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    padding: 2em;
+    background-color: #f0f0f0;
+}
+.flex-item {
+    flex: 1; /* Ensures all children grow equally */
+    margin: 1em;
+    padding: 2em;
+    border: 1px solid #000;
+    border-radius: 0.5em;
+    background-color: #fff;
+    box-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.1);
+}
+.flex-item h2 {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+    font-weight: 900;
+    font-family: var(--font-poppins);
+}
+.flex-item p {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+
+
+
 
 @media (min-width: 769px) {
     .mission-content {
@@ -132,6 +167,10 @@
     .mission-text {
         flex: 1;
     }
+    .flex-container {
+        flex-direction: row;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -164,9 +203,10 @@
 
 .team-member img {
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
     margin-bottom: 1rem;
 }
 
@@ -247,7 +287,132 @@
         margin: auto;
     }
 }
+/* benefits section */
+.benefits-section {
+    background-image: url('../assets/images/Person_repairing-generator.jpg'); /* Replace with your background image path */
+    background-size: cover;
+    opacity: 1;
+    background-position: center;
+    padding: 3em 1em;
+    color: white;
+    text-align: center;
+}
 
+.benefits-section .content {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 2em;
+    border-radius: 0.5em;
+    display: inline-block;
+    max-width: 40em;
+    margin: auto;
+}
+
+.benefits-section h2 {
+    margin-top: 0;
+}
+
+.benefits-section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 1em 0 0 0;
+    text-align: left;
+}
+
+.benefits-section ul li {
+    margin: 0.5em 0;
+    padding-left: 1.5em;
+    position: relative;
+}
+
+.benefits-section ul li:before {
+    content: '✔';
+    position: absolute;
+    left: 0;
+    color: #00FF00; /* Checkmark color */
+}
+
+@media (max-width: 768px) {
+    .benefits-section {
+        padding: 2em 1em;
+    }
+
+    .benefits-section .content {
+        padding: 1em;
+    }
+}
+
+
+
+/* ABOUT US FOOTER */
+footer {
+    background-color: #007BFF;
+    color: white;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: var(--font-ibm-plex-sans);
+}
+
+.contact p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 1em;
+}
+
+.links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.column {
+    flex: 1 1 20em;
+    margin: 1em;
+}
+
+.column h3 {
+    margin-top: 0;
+}
+
+.column ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.column ul li {
+    margin: 0.5em 0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 1em;
+}
+
+.footer-bottom p {
+    margin: 0.5em 0;
+}
+
+.footer-bottom a {
+    color: white;
+    text-decoration: none;
+    margin: 0 0.5em;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .column {
+        margin: 1em 0;
+    }
+}
 
 
 
