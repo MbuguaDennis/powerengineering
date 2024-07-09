@@ -1,4 +1,14 @@
 @import '../css/reset.css';
+@import  '../css/utilities.css';
+:root{
+  --font-poppins: 'Poppins', sans-serif;
+    --font-ibm-plex-sans: 'IBM Plex Sans', sans-serif;
+    --font-nunito-sans: 'Nunito Sans', sans-serif;
+    --font-open-sans: 'Open Sans', sans-serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+    --font-roboto-mono: 'Roboto Mono', monospace;
+    --font-roboto: 'Roboto', sans-serif;
+}
 
 *{
     box-sizing: border-box;
@@ -129,16 +139,19 @@ body {
   .hero-content {
     max-width: 600px;
     padding: 20px;
+    font-family:var(--font-poppins)
   }
   
   .hero-content h2 {
     font-size: 2.5em; /* Using em units */
     margin-bottom: 10px;
+    color: white;
   }
   
   .hero-content p {
     font-size: 1.2em; /* Using em units */
     line-height: 1.6;
+    color: #f7f5f6;
   }
   quote-section {
     background-color: #007bff;
