@@ -308,3 +308,48 @@
       margin: 1em 0; /* Adjusted margin */
     }
   }
+
+
+  /* Base styles for the generators-section */
+.generators-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Adjust as needed */
+  padding: 20px; /* Add padding around the section */
+}
+
+/* Styles for each feature */
+.feature {
+  width: 100%; /* Display in column for small screens */
+  margin-bottom: 20px; /* Adjust spacing between features */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+}
+
+/* Styles for the textual content inside each feature */
+.feature-content {
+  padding: 20px;
+  background-color: #f0f0f0; /* Light gray background */
+  border-radius: 8px;
+  flex-grow: 1; /* Take remaining vertical space */
+}
+
+/* Styles for the image inside each feature */
+.feature-image {
+  text-align: center; /* Center align the image */
+  margin-top: 10px; /* Adjust spacing between content and image */
+}
+
+.feature-image img {
+  max-width: 100%; /* Ensure the image does not exceed its container */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Media query for screens larger than 768px (tablet and desktop) */
+@media (min-width: 768px) {
+  .feature {
+      width: calc(50% - 20px); /* Display two columns with some spacing */
+  }
+}
