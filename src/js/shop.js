@@ -12,6 +12,7 @@ const products = [
     "/src/assets/images/generators/generator8.jpg",
     "/src/assets/images/generators/generator9.jpg"
     // Add more images as needed
+    // updated images
 ];
 
 const gallery = document.getElementById('gallery');
