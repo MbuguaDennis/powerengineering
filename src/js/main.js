@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-
     const menuIcon = document.getElementById('menu-icon');
     const navBar = document.querySelector('.header__nav'); // Changed to '.header__nav'
     // Close menu button
@@ -23,9 +21,6 @@ document.addEventListener("DOMContentLoaded", function() {
             goToTopButton.style.display = "none";
         }
     });
-
-
-
     // Smooth scroll to top
     goToTopButton.addEventListener("click", function () {
         window.scrollTo({

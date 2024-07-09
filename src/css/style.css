@@ -38,20 +38,29 @@ ul, li{
 /* ======TOP HEADER STYLES */
 .top-header-details{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    padding: 1em;
     align-items: center;
-    border-bottom: 3px solid forestgreen;
-    padding: 1em 10%;
+    border-bottom: 5px solid forestgreen;
 } 
 #stevone-logo{
-    width: 284px;
-    height: 51px;
+    width: 300px;
+    height: 100px;
     object-fit: cover;
     cursor: pointer;
 }
+
+
 /* heading */
 .service-title,.phone-contact{
     font-family: var(--font-nunito-sans);
+    display: block;
+    margin-top: 1em;
+}
+.service-title{
+    font-size: 1.4rem;
+    font-weight: 900;
+    color: red;
 }
 .phone-contact{
     font-weight: bold;
@@ -61,34 +70,27 @@ ul, li{
 /* contact us button */
 .contact-us-btn{
     background-color: #358600;
-    padding: 1.1em 2.2em;
-    display: inline-block;
-    border-radius: 30px;
+    padding: 0.75em 1.5em;
+    border-radius: 0.75em;
     margin-left: 0.95em;
     cursor: pointer;
-    box-shadow: 2px 2px 3px var(--accent-color-electric-green);
     color: white;
     font-family: var(--font-poppins);
-    font-size: 1.1rem;
+    font-size: 1rem;
     display: none;
     transition: 0.5s all ease-in-out;
 
 }
 .contact-us-btn:hover{
-    background-color: white;
-    color: green;
+    opacity: 0.8;
 }
-
-
-
-
 /* header styling */
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #fff;
-    padding: 10px 20px;
+    padding: 1.5%;
+
 
 }
 .header__nav{
@@ -109,13 +111,16 @@ nav ul {
     display: none;
 }
 nav ul li {
-    margin: 0 15px;
+    margin: 0 0.95em;
 }
 nav ul li a {
     color:#faf5f6;
+    font-weight: 600;
     text-transform: capitalize;
     font-size: 1.125rem;
     font-family: var(--font-poppins);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 
@@ -123,10 +128,6 @@ nav ul li a {
 /* =========HOVER EFFECT ON  LINKS */
 nav ul li a:hover{
     color: var(--additional-color-red);
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
-    border-bottom: 2px solid var(--accent-color-electric-green);
-    border-right: 2px solid var(--accent-color-electric-green);
 
 }
 .menu-icon {
@@ -144,19 +145,6 @@ nav ul li a:hover{
     font-size: 17px;
     color: black;
     font-weight: 900;
-}
-
-/* BUTTON STYLES============= */
-.send-quote-btn{
-    background-color:green; /* Button Background Color */
-    color: #fff; /* Button Text Color */
-    font-size: 16px; /* Button Font Size */
-    border: none; /* Remove Button Border */
-    border-radius: 5px ; /* Button Border Radius */
-    cursor: pointer; /* Cursor Style */
-    transition: background-color 0.3s ease; /* Smooth Transition on Hover */
-    font-family: var(--font-roboto-mono);
-    font-weight: 600;
 }
 
 .send-quote-btn:hover {
@@ -182,7 +170,7 @@ nav ul li a:hover{
 
 /* ===hero section=== */
 .hero__section{
-    background-image: url('../assets/images/black_hero_background.jpg'); /* Replace with your image path */
+    background-image: url('../assets/images/Black_Hero_Image.jpg'); /* Replace with your image path */
     background-size: cover; /* Cover the entire area */
     background-position: center; /* Center the image */
     display: flex;
@@ -192,7 +180,7 @@ nav ul li a:hover{
     text-align: center;
     color: #fff; /* Text color */
     font-family: Arial, sans-serif; /* Choose your preferred font */
-    padding: 20px;
+    padding: 1.2em;
 }
 .hero__section > .hero__content {
     max-width: 800px; /* Limit content width */
@@ -223,7 +211,6 @@ nav ul li a:hover{
     background-color:#3E8914; /* Button Background Color */
     color: #fff; /* Button Text Color */
     font-size: 16px; /* Button Font Size */
-    border: 1px dashed white; /* Remove Button Border */
     border-radius: 5px ; /* Button Border Radius */
     cursor: pointer; /* Cursor Style */
     font-family: var(--font-roboto-mono);
@@ -244,6 +231,8 @@ nav ul li a:hover{
     font-family: var(--font-open-sans);
     font-weight: bold;
     font-size: 24px;
+    display: inline-block;
+    margin-left: 0.7em;
 }
 
 
@@ -259,7 +248,6 @@ nav ul li a:hover{
     color: white;
     display:flex;
     align-items: center;
-    margin-top: -30px;
     justify-content: space-between;
     text-align: center;
     padding: 2vw;
@@ -271,10 +259,19 @@ nav ul li a:hover{
 }
 .more-about-us-btn{
     background-color: blue;
-    padding: 20px 40px;
+    padding: 12px 24px;
     height: 70px;
     width: 100%;
-    display: block;
+    display: inline-block;
+    cursor: pointer;
+}
+.more-about-us-btn:hover{
+    background-color: royalblue;
+
+}
+.more-about-us-btn i{
+    color: red;
+    font-size: 30px;
 }
 
 
@@ -1117,25 +1114,16 @@ footer {
   .whatsapp-icon:hover .whatsapp-text {
     display: inline-block; /* Show text on hover */
   }
-  
-  /* Optional: Media query for responsiveness */
-  @media (max-width: 768px) {
-    .whatsapp-icon {
-      font-size: 18px; /* Adjust icon size for smaller screens */
-      padding: 10px; /* Adjust padding for smaller screens */
-    }
-  
-    .whatsapp-text {
-      font-size: 12px; /* Adjust text size for smaller screens */
-    }
-  }
-  
-
-
 
 /* ----------------ALL WEBSITE BREAK POINTS ARE HERE */
 /* Media query for larger screens */
 @media (min-width: 768px) {
+
+    .service-title,.phone-contact{
+        display: inline;
+        padding-left: 10px;
+    
+    }
     .why-us-cards {
         flex-direction: row; /* Row layout on larger screens */
         flex-wrap: wrap; /* Wrap cards to prevent overflow */
@@ -1179,6 +1167,12 @@ footer {
   @media screen and (max-width: 768px) {
     .statistic-item {
         flex-basis: calc(50% - 2em); /* Adjust based on desired number of items per row */
+    }
+    /* top header  */
+    .top-header-details{
+        flex-direction: column;
+        text-align: center;
+      
     }
   }
   
