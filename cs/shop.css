@@ -1,5 +1,5 @@
-@import '../css/reset.css';
-@import  '../css/utilities.css';
+@import './cs/reset.css';
+@import  './cs/utilities.css';
 :root{
   --font-poppins: 'Poppins', sans-serif;
     --font-ibm-plex-sans: 'IBM Plex Sans', sans-serif;
@@ -19,6 +19,12 @@
     padding: 2em;
     background-color: aquamarine;
 }
+.shop__header h3{
+  text-align: center;
+  color:coral;
+  font-family: var(--font-poppins);
+  font-size: 24px;
+}
 .shop__section {
     background-color: #f0f0f0;
     text-align: center;
@@ -32,7 +38,7 @@
   }
 
 .shop__header img{
-    max-width: 100%;
+  max-width: 100%;
 width: 500px;
 height: 51px;
 object-fit: cover;
@@ -58,9 +64,10 @@ body {
 }
 
 .gallery img {
-    width: 100%; /* Ensure images fill their containers */
+    max-width:100%; /* Ensure images fill their containers */
     height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Cover aspect ratio without stretching */
+    width: 250px;
 }
 
 .prev-btn, .next-btn {
@@ -125,7 +132,7 @@ body {
     color: #333; /* Example color */
   }
   .hero-section {
-    background-image: url('../assets/images/panels/panel1.jpg'); /* Replace with your background image */
+    background-image: url('/images/panel1.jpg'); /* Replace with your background image */
     background-size: cover;
     background-position: center;
     height: 400px; /* Adjust height as needed */

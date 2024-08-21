@@ -77,15 +77,15 @@ setInterval(changeText, 2000); // Change text every 2 seconds
 
 // Array of products (images)
 const products = [
-    "/src/assets/images/generators/generator1.jpg",
-    "/src/assets/images/generators/generator2.jpg",
-    "/src/assets/images/generators/generator3.jpg",
-    "/src/assets/images/generators/generator4.jpg",
-    "/src/assets/images/generators/generator5.jpg",
-    "/src/assets/images/generators/generator6.jpg",
-    "/src/assets/images/generators/generator7.jpg",
-    "/src/assets/images/generators/generator8.jpg",
-    "/src/assets/images/generators/generator9.jpg"
+    "/images/generator1.jpg",
+    "/images/generator2.jpg",
+    "/images/generator3.jpg",
+    "/images/generator4.jpg",
+    "/images/generator5.jpg",
+    "/images/generator6.jpg",
+    "/images/generator7.jpg",
+    "/images/generator8.jpg",
+    "/images/generator9.jpg"
     // Add more images as needed
     // updated images
 ];
